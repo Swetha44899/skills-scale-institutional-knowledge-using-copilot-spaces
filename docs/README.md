@@ -2,19 +2,9 @@
 
 Welcome to the OctoAcme project management knowledge base. This README provides an overview of our project management framework and links to detailed process documentation.
 
-## OctoAcme Project Management Approach
-
-OctoAcme follows a structured lifecycle that begins with initiation and proceeds through planning, execution, release, and retrospective. At the initiation stage, work is validated through a project one-pager that defines the problem, goal, success metrics, stakeholders, timeline, and risks. Once approved, the team moves into planning, where the backlog is prioritized, dependencies are identified, estimates are assigned, and a clear definition of done is documented. This helps ensure that work is broken into shippable increments and that delivery is aligned around milestones, release timing, and responsibilities.
-
-The process emphasizes clear roles and accountabilities across the project. The Product Manager defines outcomes and prioritization, the Project Manager coordinates scheduling, risks, and communication, and developers own implementation, testing, and technical quality. QA/testing supports acceptance validation, while stakeholders provide input and approvals. These personas are intended to make ownership transparent and ensure that project work is oriented around customer value, measurable outcomes, and efficient cross-functional collaboration. The team also recognizes that clarity of role boundaries improves decision-making and reduces ambiguity in execution.
-
-Communication is treated as a core part of delivery, with recurring rhythms designed to keep stakeholders aligned. Weekly PM and Product Lead syncs, twice-weekly team standups, milestone demos, and monthly stakeholder updates provide regular opportunities to review progress, raise blockers, and confirm priorities. The risk and communication guidance also recommends maintaining a single source of truth for status, such as a project README or release doc, and using structured templates for weekly updates and incident communications. Escalation paths are defined so that issues can move from the team level to PM, Product Lead, and sponsor as needed, especially for business-critical or security-related concerns.
-
-Quality assurance is embedded throughout the lifecycle rather than treated as a final step. The execution guidance requires pull requests to include issue links and acceptance criteria, CI to run automated tests and linting, and at least one approval before merging. Testing expectations include unit, integration, and end-to-end smoke tests depending on the feature, along with security scanning and manual QA where needed. Release and deployment practices reinforce this by requiring passing CI, smoke testing, rollback plans, and post-deployment verification before production rollout. The retrospective process then closes the loop by capturing lessons learned, tracking action items, and committing to continuous improvement through measurable follow-up.
-
 ## OctoAcme Project Management Overview
 
-OctoAcme follows an iterative, customer-first approach to project delivery. Our framework is built on five principles:
+OctoAcme follows an iterative, customer-first approach to project delivery. Our framework is built on core principles:
 - **Customer-first**: Prioritize customer value and usability
 - **Iterative delivery**: Deliver small, testable increments
 - **Clear ownership**: Named Project Managers and Product Leads
@@ -27,65 +17,95 @@ OctoAcme projects follow a structured lifecycle with defined phases, roles, and 
 
 ### 1. [Initiation](octoacme-project-initiation.md)
 Validate business need, align stakeholders, and authorize work.
-- Deliverables: Project One-pager, stakeholder list, high-level timeline
-- Decision gate: Approve to move into planning
+- **Deliverables**: Project One-pager, stakeholder list, high-level timeline
+- **Decision gate**: Approve to move into planning
+- **Key activities**: Stakeholder identification, success criteria definition, resource estimation
 
 ### 2. [Planning](octoacme-project-planning.md)
 Turn an approved initiative into an actionable plan and backlog.
-- Activities: Kickoff, backlog creation, dependency identification
-- Deliverables: Prioritized backlog, release plan, DoD
+- **Key activities**: Kickoff, backlog creation, dependency identification, Definition of Done
+- **Deliverables**: Prioritized backlog with acceptance criteria, release plan, milestone map
+- **Outcome**: Ready-to-execute delivery roadmap
 
 ### 3. [Execution & Tracking](octoacme-execution-and-tracking.md)
 Manage day-to-day work, testing, and progress toward milestones.
-- Rituals: Daily standups, weekly syncs, sprint planning
-- Deliverables: Completed work, passing tests, demo materials
+- **Rituals**: Daily standups (15 min), weekly delivery sync, sprint planning
+- **Deliverables**: Completed work, passing tests, demo materials
+- **Focus**: Quality, blocker escalation, velocity tracking
 
 ### 4. [Risk Management & Communication](octoacme-risks-and-communication.md)
 Identify, assess, and mitigate risks; keep stakeholders informed.
-- Artifacts: Risk register, communication templates, escalation paths
-- Cadence: Weekly risk review, milestone-based stakeholder updates
+- **Artifacts**: Risk register, communication templates, escalation paths
+- **Cadence**: Weekly risk review, milestone-based stakeholder updates
+- **Goal**: Proactive risk mitigation and transparent communication
 
 ### 5. [Release & Deployment](octoacme-release-and-deployment.md)
 Standardize how features reach production with reduced risk.
-- Pre-release: Acceptance criteria, CI/security scans, release notes
-- Post-release: Smoke tests, verification, rollback readiness
+- **Pre-release**: Acceptance criteria verification, CI/security scans, release notes, rollback plan
+- **Post-release**: Smoke tests, verification, incident playbook activation if needed
+- **Release types**: Patch (hotfixes), Minor (features), Major (significant changes)
 
 ### 6. [Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md)
 Capture learnings and convert them into actionable improvements.
-- Timing: After sprints, releases, or incidents
-- Deliverables: Action items, process improvements
+- **Timing**: After sprints, releases, or incidents
+- **Structure**: What went well, what could improve, action items with owners and due dates
+- **Outcome**: Documented improvements fed back into processes
 
 ## Core Roles & Personas
 
 See [Roles & Personas](octoacme-roles-and-personas.md) for detailed descriptions of:
-- **Project Managers**: Coordinate delivery, manage schedules and risks
-- **Product Managers**: Define what to build and measure success
-- **Developers**: Design, build, test, and deliver features
-- **QA/Testing**: Validate quality and acceptance criteria
+
+- **Project Managers**: Coordinate delivery, manage schedules and risks, facilitate communication, ensure transparency
+- **Product Managers**: Define what to build and measure success, prioritize roadmap, validate solutions
+- **Developers**: Design, build, test, and deliver features; collaborate on design and code reviews
+- **QA/Testing**: Validate quality and acceptance criteria, run smoke tests, ensure readiness for release
 
 ## Key Artifacts & Templates
 
-- Project One-pager
-- Prioritized Product Backlog
-- Risk Register
-- Sprint/Iteration Plans
-- Release Notes
-- Retrospective Action Items
-- Weekly Status Updates
+Essential documents and templates used throughout the project lifecycle:
 
-## Quick Start for New Team Members
-
-1. Start with the [Project Management Overview](octoacme-project-management-overview.md) for principles and roles
-2. Review the [Roles & Personas](octoacme-roles-and-personas.md) to understand your team's structure
-3. Dive into phase-specific docs based on where your project is in the lifecycle
-4. Reference checklists and templates for day-to-day execution
+- **Project One-pager**: Problem, goal, success metrics, stakeholders, timeline
+- **Prioritized Product Backlog**: Acceptance criteria, estimates, owners
+- **Risk Register**: ID, description, impact, likelihood, mitigation, status
+- **Sprint/Iteration Plans**: Capacity planning, DoD verification
+- **Release Notes**: Changes, migration steps, known issues
+- **Retrospective Action Items**: Owner, due date, success criteria
+- **Weekly Status Updates**: Progress, next steps, risks, decisions needed
 
 ## Communication Cadence
 
-- **Daily**: Team standups (15 min)
-- **Weekly**: PM + PdM sync, delivery team standup, risk review
+Consistent, structured communication keeps all stakeholders aligned:
+
+- **Daily**: Team standups (15 min focus on progress, blockers, dependencies)
+- **Weekly**: PM + Product Manager sync, delivery team standup, risk review
 - **Milestone-based**: Stakeholder updates, demos, retrospectives
-- **Ad-hoc**: Escalations and incident communication
+- **Ad-hoc**: Escalations, incident communication
+
+## Quick Start for New Team Members
+
+1. **Start here**: Review the [Project Management Overview](octoacme-project-management-overview.md) for principles and roles
+2. **Understand your team**: Review [Roles & Personas](octoacme-roles-and-personas.md) to identify your responsibilities
+3. **Dive into phases**: Review phase-specific docs based on where your project is in the lifecycle
+4. **Execute**: Reference checklists and templates for day-to-day execution
+
+## Decision Gates
+
+Clear go/no-go decisions ensure alignment and prevent scope creep:
+
+- **Initiation → Planning**: Success metrics clear, stakeholders aligned, team availability confirmed
+- **Planning → Execution**: Backlog prioritized, DoD documented, risks identified
+- **Execution → Release**: All acceptance criteria met, CI passing, release plan approved
+- **Release → Close**: Deployment successful, post-release verification complete
+
+## Escalation Paths
+
+When issues arise, know who to escalate to:
+
+- **Level 1**: Team-level triage in daily standup
+- **Level 2**: PM escalates to Product Lead and dependent teams
+- **Level 3**: Sponsor-level escalation for business-impacting issues
+
+For security incidents, activate the security incident runbook immediately.
 
 ## Need Help?
 
@@ -94,3 +114,11 @@ Each process document includes:
 - Key activities and workflows
 - Templates and checklists
 - Decision gates and escalation paths
+
+Start with the document that matches your current project phase, or use the "Quick Start for New Team Members" section above to get oriented.
+
+---
+
+**Last Updated**: September 30, 2026  
+**Owned by**: OctoAcme Project Management Team  
+**Questions?**: Refer to individual process documents or contact your Product Lead
