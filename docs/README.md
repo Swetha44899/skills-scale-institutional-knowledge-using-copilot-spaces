@@ -2,6 +2,16 @@
 
 Welcome to the OctoAcme project management knowledge base. This README provides an overview of our project management framework and links to detailed process documentation.
 
+## OctoAcme Project Management Approach
+
+OctoAcme follows a structured lifecycle that begins with initiation and proceeds through planning, execution, release, and retrospective. At the initiation stage, work is validated through a project one-pager that defines the problem, goal, success metrics, stakeholders, timeline, and risks. Once approved, the team moves into planning, where the backlog is prioritized, dependencies are identified, estimates are assigned, and a clear definition of done is documented. This helps ensure that work is broken into shippable increments and that delivery is aligned around milestones, release timing, and responsibilities.
+
+The process emphasizes clear roles and accountabilities across the project. The Product Manager defines outcomes and prioritization, the Project Manager coordinates scheduling, risks, and communication, and developers own implementation, testing, and technical quality. QA/testing supports acceptance validation, while stakeholders provide input and approvals. These personas are intended to make ownership transparent and ensure that project work is oriented around customer value, measurable outcomes, and efficient cross-functional collaboration. The team also recognizes that clarity of role boundaries improves decision-making and reduces ambiguity in execution.
+
+Communication is treated as a core part of delivery, with recurring rhythms designed to keep stakeholders aligned. Weekly PM and Product Lead syncs, twice-weekly team standups, milestone demos, and monthly stakeholder updates provide regular opportunities to review progress, raise blockers, and confirm priorities. The risk and communication guidance also recommends maintaining a single source of truth for status, such as a project README or release doc, and using structured templates for weekly updates and incident communications. Escalation paths are defined so that issues can move from the team level to PM, Product Lead, and sponsor as needed, especially for business-critical or security-related concerns.
+
+Quality assurance is embedded throughout the lifecycle rather than treated as a final step. The execution guidance requires pull requests to include issue links and acceptance criteria, CI to run automated tests and linting, and at least one approval before merging. Testing expectations include unit, integration, and end-to-end smoke tests depending on the feature, along with security scanning and manual QA where needed. Release and deployment practices reinforce this by requiring passing CI, smoke testing, rollback plans, and post-deployment verification before production rollout. The retrospective process then closes the loop by capturing lessons learned, tracking action items, and committing to continuous improvement through measurable follow-up.
+
 ## OctoAcme Project Management Overview
 
 OctoAcme follows an iterative, customer-first approach to project delivery. Our framework is built on five principles:
